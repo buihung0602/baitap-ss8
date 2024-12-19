@@ -13,21 +13,22 @@ int main() {
 		}
 		printf("\n");
 	
-		printf("cac phan tu tren duong cheo chinh la: \n");
+		printf("cac phan tu tren duong bien la: \n");
 		for (int i=0;i<3;i++){
 			for (int j=0;j<3;j++) {
-			
-				if( i==j) {
+			if( i==0||i==n-1||j==0||j==n-1) {
+					sum+=matrix[i][j];
 					printf("%d ",matrix[i][j]);
-						x+=matrix[i][j];
 				}else {
 					printf("  ");
 				}
+				
+				
 			}
 		
 			printf("\n");
 	}
 
-	printf("tong cac so nam tren duong cheo chinh: %d",x);
+	printf("tong cac so nam tren duong bien: %d",x);
 	return 0;
 }
